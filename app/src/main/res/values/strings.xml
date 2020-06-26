@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Simple Weather</string>
+
+    <string name="weather_result">%1$s: %2$.1f \u2103, %3$s.</string>
+</resources>

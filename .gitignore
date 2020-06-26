@@ -1,0 +1,40 @@
+*~
+*.metadata/
+*/.metadata/
+*.patch
+
+# build output
+/*.apk
+/*.so
+/build/build/*
+/android-sdk-linux
+/android-ndk-*
+/*.txt
+/*.tar.gz
+
+# Generated build.bash files
+generated_files/
+
+.gradle/
+.idea/
+version_history.txt
+local.properties
+build
+build/intermediates/
+build/generated/
+build/android-profile/
+captures
+
+# Android Studio Project files
+*.iml
+.idea/
+.idea/workspace.xml
+.idea/libraries
+local.properties
+.project
+.settings/
+
+# MAC files
+.DS_Store
+
+
