@@ -1,16 +1,15 @@
 package org.eldorado.simpleweather.ui;
 
-import android.content.res.Resources;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+
 import com.google.android.material.snackbar.Snackbar;
 import com.google.gson.Gson;
 
@@ -62,7 +61,7 @@ public class WeatherListFragment extends Fragment {
     }
 
     private void getCityWeather(final String city) {
-        RemoteWeatherDataSource remoteWeatherDataSource = new RemoteWeatherDataSource(weatherService);
+        RemoteWeatherDataSource remoteWeatherDataSource = RemoteWeatherDataSource.getInstance(weatherService);
 
         Call<Weather> call = remoteWeatherDataSource.getCityWeather(city);
 
@@ -104,5 +103,4 @@ public class WeatherListFragment extends Fragment {
             return "";
         }
     }
-
 }
